@@ -17,7 +17,8 @@
   font-family: var(--font, Arial ,sans-serif);
   line-height: normal;
   background-color: var(--bg-color, #fff);
-  background-image: var(--bg-image);
+  background-image: var(--bg-image,);
+  background-size: cover;
   background-attachment: fixed;
   font-variation-settings: var(--card-font-weight, 400);
 }
