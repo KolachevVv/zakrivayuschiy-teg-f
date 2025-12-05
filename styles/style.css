@@ -13,4 +13,11 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  color: var(--main-color, #000);
+  font-family: var(--font, Arial ,sans-serif);
+  line-height: normal;
+  background-color: var(--bg-color, #fff);
+  background-image: var(--bg-image);
+  background-attachment: fixed;
+  font-variation-settings: var(--card-font-weight, 400);
 }
