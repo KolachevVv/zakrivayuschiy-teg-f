@@ -13,6 +13,8 @@
     --button-text-color: #fff;
     --card-font-weight: 400;
     --card-title-font-weight: 700;
+    --heart-contour-color: #000;
+    --heart-sparks-color: #FF0000;
     --bg-image: 
         repeating-linear-gradient (
         to right,
