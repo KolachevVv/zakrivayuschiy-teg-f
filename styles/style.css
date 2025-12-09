@@ -76,7 +76,7 @@
   font-family: var(--font-accent);
   font-weight: var(--text-weight);
   font-size: var(--font-size-card-label);
-  text-shadow: 0 0 1px var(--shadow-color);
+  text-shadow: 0 0 3px var(--shadow-color);
   mix-blend-mode: hard-light;
   opacity: 0.5;
   z-index: 1;
@@ -99,7 +99,7 @@
   align-items: center;
 }
 .filter__brightness {
-  filter: brightness(110%);
+  filter: brightness(150%);
 }
 
 .filter__opacity {
@@ -107,11 +107,11 @@
 }
 
 .filter__hue-rotate {
-  filter: hue-rotate(-10deg);
+  filter: hue-rotate(-30deg);
 }
 
 .filter__sepia {
-  filter: sepia(95%);
+  filter: sepia(80%);
 }
 
 .filter__invert {
@@ -123,7 +123,7 @@
 }
 
 .filter__blur {
-  filter: blur(0.02rem);
+  filter: blur(0.12rem);
 }
 
 .filter__multy {
