@@ -129,3 +129,12 @@
 .filter__multy {
   filter: sepia(1) hue-rotate(264deg) saturate(289%);
 }
+@supports (
+  (text-stroke: 1px var(--shadow-color)) or
+    (-webkit-text-stroke: 1px var(--shadow-color))) {
+  .card_label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--shadow-color);
+    text-stroke: 1px var(--shadow-color);
+  }
+}
