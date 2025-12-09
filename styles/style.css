@@ -11,5 +11,121 @@
 */
 
 .page {
-  
+    font-family: var(--font-main);
+    font-variation-settings: "wght" var(--text-weight);
+    font-size: var(--font-size);
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-self: center;
+}
+.header{
+  width: var(--page-width);
+  font-family: var(--font-accent);
+  font-weight: var(--text-weight);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  outline: 2px solid var(--color);
+  background-color: var(--background-color);
+  padding-block: 128px;
+  margin-block:103px;
+}
+.header__logo {
+  font-size: var(--header-logo-font-size);
+  font-weight: var(--text-weight);
+  line-height: 100%;
+  margin-block-end: 20px;
+}
+.header__title {
+  font-size: var(--header-title-font-size);
+}
+.main {
+  display: grid;
+  margin-block-end: 100px; 
+  justify-self: center;
+}
+.article {
+  outline: 2px solid var(--color);
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 54px;
+}
+.article__title {
+  padding: 5px 10px;
+  font-variation-settings: "wght" var(--title-weight);
+  color: var(--color);
+  background-color: var(--background-color);
+  font-size: var(--font-size);
+}
+.article__img_wrapper {
+  position: relative;
+  margin: 0px 0px 5px 0px;
+  outline: var(--main-border);
+}
+.label__card {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-family: var(--accent-font);
+  font-weight: var(--text-weight);
+  font-size: var(--font-size-card-label);
+  text-shadow: 0 0 1px var(--shadow-color);
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+  z-index: 1;
+}
+.article__info {
+  padding: 24px 24px 25px 26px;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+}
+.article__text {
+
+}
+.article__image {
+  display: flex;
+  object-fit: cover;
+  object-position: center;
+  inline-size: 100%;
+  max-block-size: 100%;
+  align-items: center;
+}
+.filter__brightness {
+  filter: brightness(110%);
+}
+
+.filter__opacity {
+  filter: opacity(0.9);
+}
+
+.filter__hue-rotate {
+  filter: hue-rotate(-10deg);
+}
+
+.filter__sepia {
+  filter: sepia(95%);
+}
+
+.filter__invert {
+  filter: invert(0.10);
+}
+
+.filter__grayscale {
+  filter: grayscale(1.0);
+}
+
+.filter__blur {
+  filter: blur(0.02rem);
+}
+
+.filter__multy {
+  filter: sepia(1) hue-rotate(264deg) saturate(289%);
 }
