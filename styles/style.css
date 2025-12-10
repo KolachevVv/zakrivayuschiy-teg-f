@@ -84,7 +84,7 @@
   font-family: var(--font-accent);
   font-weight: var(--text-weight);
   font-size: var(--font-size-card-label);
-  text-shadow: 0 0 3px var(--shadow-color);
+  text-shadow: 0 0 1px var(--shadow-color);
   mix-blend-mode: hard-light;
   opacity: 0.5;
   z-index: 1;
@@ -141,7 +141,7 @@
 @supports (
   (text-stroke: 1px var(--shadow-color)) or
     (-webkit-text-stroke: 1px var(--shadow-color))) {
-  .card_label {
+  .label__card {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--shadow-color);
     text-stroke: 1px var(--shadow-color);
