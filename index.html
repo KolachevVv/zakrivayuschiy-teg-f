@@ -15,7 +15,7 @@
   </head>
   <body class="page">
     <header class="header header__size">
-      <a class="header__logo" href="#0">&lt;/HTML&gt;</a>
+      <a class="header__logo">&lt;/HTML&gt;</a>
       <h1 class="header__title">Закрывающий тег</h1>
     </header>
     <main class="main">
@@ -46,7 +46,7 @@
                 fill="var(--heart-sparks-color)"/>
               </svg>
             </button>
-            <button type="button" class="card__like-button decorated_button">
+            <button type="button" class="card__like-button decorated__button">
               <span class="button__text decorated_button_text">Like</span>
             </button>
           </div>
@@ -79,7 +79,7 @@
                 fill="var(--heart-sparks-color)"/>
               </svg>
             </button>
-            <button type="button" class="card__like-button decorated_button">
+            <button type="button" class="card__like-button decorated__button">
               <span class="button__text decorated_button_text">Like</span>
             </button>
           </div>
@@ -112,7 +112,7 @@
                 fill="var(--heart-sparks-color)"/>
               </svg>
             </button>
-            <button type="button" class="card__like-button decorated_button">
+            <button type="button" class="card__like-button decorated__button">
               <span class="button__text decorated_button_text">Like</span>
             </button>
           </div>
@@ -145,7 +145,7 @@
                 fill="var(--heart-sparks-color)"/>
               </svg>
             </button>
-            <button type="button" class="card__like-button decorated_button">
+            <button type="button" class="card__like-button decorated__button">
               <span class="button__text decorated_button_text">Like</span>
             </button>
           </div>
@@ -178,7 +178,7 @@
                 fill="var(--heart-sparks-color)"/>
               </svg>
             </button>
-            <button type="button" class="card__like-button decorated_button">
+            <button type="button" class="card__like-button decorated__button">
               <span class="button__text decorated_button_text">Like</span>
             </button>
           </div>
@@ -211,7 +211,7 @@
                 fill="var(--heart-sparks-color)"/>
               </svg>
             </button>
-            <button type="button" class="card__like-button decorated_button">
+            <button type="button" class="card__like-button decorated__button">
               <span class="button__text decorated_button_text">Like</span>
             </button>
           </div>
@@ -244,7 +244,7 @@
                 fill="var(--heart-sparks-color)"/>
               </svg>
             </button>
-            <button type="button" class="card__like-button decorated_button">
+            <button type="button" class="card__like-button decorated__button">
               <span class="button__text decorated_button_text">Like</span>
             </button>
           </div>
@@ -277,15 +277,40 @@
                 fill="var(--heart-sparks-color)"/>
               </svg>
             </button>
-            <button type="button" class="card__like-button decorated_button">
+            <button type="button" class="card__like-button decorated__button">
               <span class="button__text decorated_button_text">Like</span>
             </button>
           </div>
         </div>
 </article>
-
-    </main>
-
+    <button
+  class="save__button decorated__button" type="button" onclick="window['floppy_dialog'].showModal()" aria-controls="floppy__dialog">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" class="mix__difference floppy__svg">
+  <use href="./svg/floppy.svg"></use>
+  </svg>
+  <span class="decorated_button_text">Сохранить на память</span>
+    </button>
+</main>
+<dialog id="floppy_dialog" class="floppy__dialog">
+        <div class="dialog__description">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 44 44"
+            class="dialog_floppy_svg"
+          >
+            <use href="./svg/floppy.svg"></use>
+          </svg>
+          <p class="dialog__label">Вставьте дискету, чтобы продолжить</p>
+        </div>
+        <form  method="dialog">
+          <button 
+            type="submit"
+            class="dialog__button decorated__button"
+          >
+            <span class="decorated_button_text">OK</span>
+          </button>
+        </form>
+      </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
