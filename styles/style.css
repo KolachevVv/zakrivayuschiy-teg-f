@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: center;
 }
-.header{
+.header {
   width: var(--page-width);
   font-family: var(--font-accent);
   font-weight: var(--text-weight);
