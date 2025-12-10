@@ -52,7 +52,7 @@
 
 .main {
   display: grid;
-  margin-block-end: 100px; 
+  margin-block-end: 100px;
   justify-self: center;
 }
 
