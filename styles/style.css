@@ -43,7 +43,7 @@
   font-size: var(--header-logo-font-size);
   font-weight: var(--text-weight);
   line-height: 100%;
-  margin-block-end: 20px;
+  margin-block-end: 21px;
 }
 
 .header__title {
@@ -61,6 +61,7 @@
   max-width: 696px;
   background-color: #fff;
   margin-bottom: 54px;
+  max-width: 696px;
 }
 
 .article__title {
@@ -293,6 +294,7 @@ body:has(.floppy_dialog[open]) {
   .card__label {
   top: 20px;
   right: 10px;
+  max-height: 371px;
   }
 
   .save__button {
