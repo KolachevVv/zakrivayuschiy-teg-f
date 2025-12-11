@@ -61,6 +61,7 @@
   max-width: 696px;
   background-color: #fff;
   margin-bottom: 54px;
+  min-height: 950px;
 }
 
 .article__title {
@@ -95,6 +96,7 @@
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
+  gap: 22px;
 }
 
 .article__image {
@@ -192,7 +194,7 @@
 }
 
 .save__button {
-  width: 340px;
+  width: 335px;
   min-height: 55px;
   gap: 4px;
   display: flex;
