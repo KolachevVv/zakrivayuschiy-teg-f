@@ -96,6 +96,7 @@
   display: flex;
   flex-direction: column;
   gap: 22px;
+  line-height: 1.16667;
 }
 
 .article__image {
@@ -157,8 +158,9 @@
 }
 
 .dialog_floppy_svg {
-  inline-size: 50px;
-  block-size: 50px;
+  flex-shrink: 0;
+  inline-size: 39px;
+  block-size: 39px;
 }
 
 .card__like-button {
@@ -193,7 +195,7 @@
 .save__button {
   inline-size: 335px;
   min-block-size: 55px;
-  gap: 4px;
+  gap: 8px;
   display: flex;
   justify-self: center;
 }
@@ -237,6 +239,9 @@
 
 .decorated__button:hover::before {
   translate: 0%;
+}
+.decorated__button:hover .floppy__svg {
+  filter: invert(100%);
 }
 
 .floppy__dialog[open] {
@@ -288,7 +293,7 @@ body:has(.floppy_dialog[open]) {
   }
 
   .header__title {
-    line-height: 49px;
+    line-height: 15px;
     letter-spacing: normal;
   }
 
@@ -305,13 +310,16 @@ body:has(.floppy_dialog[open]) {
     gap: 4px;
   }
 
-  .floppy__svg {
-    inline-size: 32px;
-    block-size: 32px;
-  }
-
   .decorated_button_text {
     margin-inline-end: 2px;
     margin-block-end: 4px;
   }
+  .floppy__svg {
+    inline-size: 28px;
+    block-size: 28px;
+}
+.floppy__dialog[open] {
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+}
 }
