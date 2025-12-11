@@ -22,5 +22,5 @@
     --page-width: clamp(18.75rem, 100%, 43.5rem);
     --header-logo-font-size: clamp(3.063rem, 1.909rem + 4.92vw, 4.063rem);
     --header-title-font-size: clamp(0.875rem, 0.226rem + 2.77vw, 1.438rem);
-    --time_step: 0.3s;
+    --time-step: 0.3s;
 }
