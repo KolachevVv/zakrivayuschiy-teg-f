@@ -13,27 +13,33 @@
     from {
         scale: 1;
     }
+
     to {
         scale: 1.25;
     }
-    
+
 }
+
 @keyframes sparks {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
+
 .card__icon-button .core {
     fill: transparent;
     transition: fill var(--time_step) ease 0s;
 }
+
 .button_heart .main-body {
     fill: transparent;
     transition: fill var(--time_step) ease 0s;
 }
+
 /*активное состояние*/
 .card__icon-button:hover .core {
     fill: var(--heart-contour-color);
@@ -54,6 +60,7 @@
     fill: var(--heart-sparks-color);
     transition: fill var(--time_step) ease 0.05s;
 }
+
 /* Совершенное действие */
 .card__icon-button .is-liked .core {
     fill: var(--heart-sparks-color);
@@ -72,14 +79,15 @@
 }
 
 .card__icon-button .is-liked {
-    animation: like  var(--time_step) ease-in 0.1s 1;
+    animation: like var(--time_step) ease-in 0.1s 1;
     transform-origin: center;
 }
+
 .card__icon-button .is-liked .sparks {
     animation: sparks var(--time_step) ease-in var(--time_step) 1;
 }
 
 .card__icon-button:focus-visible {
     outline-color: black;
-    transition:  outline-color var(--time_step) linear;
+    transition: outline-color var(--time_step) linear;
 }
